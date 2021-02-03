@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <title>Covid Cases - India</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid  p-5 text-center my-3">
+        <h1 class="text-black-50">Covid Cases - India</h1>
+        <h5 class="text-muted">
+            Source - <a href="https://www.covid19india.org/">www.covid19india.org</a>
+        </h5>
+    </div>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-6 text-warning">
+                <h3>Confirmed</h3>
+                <p id="confirmed"></p>
+            </div>
+            <div class="col-6 text-info">
+                <h3>Active</h3>
+                <p id="active"></p>
+            </div>
+            <div class="col-6 text-success">
+                <h3>Recovered</h3>
+                <p id="recovered"></p>
+            </div>
+            <div class="col-6 text-danger">
+                <h3>Deceased</h3>
+                <p id="deaths"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container  p-3 my-5 text-center">
+        <h2 class="text-black-50">How is India Treating COVID-19? </h2>
+        <h5 class="text-muted">
+            <br> Hydroxychloroquine has been approved as a treatment in mild and moderate cases, and as prophylactic. <br> Investigational therapies Remdesivir has been approved under emergency use for patients with moderate COVID-19 (those on oxygen).
+            Under off label use, convalescent plasma may be considered in patients with moderate COVID-19 who are not improving (oxygen requirement is progressively increasing) despite the use of steroids.<br>Under off label use, Tocilizumab may be considered
+            in patients with moderate COVID-19 who are not improving (progressively increasing oxygen requirements and in mechanical ventilation) despite the use of steroids. For dosage and other considerations, click here. Corticosteroid drugs such as
+            Methylprednisolone and Dexamethasone have been approved for the clinical management of patients with moderate and severe COVID-19. For dosage and other considerations, click here. Low molecular weight Heparin has been prescribed to prevent
+            blood clots and thrombogenic response.<br><br> For dosage and other considerations, <a href="https://www.mohfw.gov.in/pdf/UpdatedClinicalManagementProtocolforCOVID19dated03072020.pdf">click here</a><br> For the detailed clinical management
+            treatment protocol, <a href="https://www.mohfw.gov.in/pdf/UpdatedClinicalManagementProtocolforCOVID19dated03072020.pdf"> click here</a></h5>
+        <br><br>
+        <p class="text-info">Stay Indoors Stay Safe - Be Cautious</p>
+    </div>
+
+    <canvas id="myChart" width="30vw" height="30vh"></canvas>
+
+    <div class="container text-center my-5">
+        <h6 class="text-info">
+            *Click on the Confirmed/Recovered/Deaths buttons above to see the chart individually.*
+        </h6>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">Copyright &copy;2020,
+          <a href="http://www.vikrams.ml/">Vikram S</a></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

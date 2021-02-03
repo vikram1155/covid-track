@@ -1,0 +1,6 @@
+/* Changing the font-family of all the elements in the project */
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(31, 30, 30);
+}
